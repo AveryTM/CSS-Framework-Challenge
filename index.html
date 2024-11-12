@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="screen.css">
-  </head>
-  <body>
-    <h1>Home</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-    <script src="index.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ocean Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="mt-20 flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+    <div class="mx-96 shadow-md w-auto rounded-md border-2 border-slate-200 content-center">
+      <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+        <h2 class=" font-['Montserrat'] mt-10 text-center text-4xl/9 font-bold tracking-tight text-[#2b8b8d]">Welcome to the Ocean</h2>
+      </div>
+      <div class="mt-5 sm:mx-auto sm:w-full sm:max-w-sm">
+        <form class="space-y-6">
+          <div class="mt-2">
+            <input placeholder="  Email" id="email" name="email" type="email" autocomplete="email" required class="font-['Montserrat'] block w-full rounded-lg border-0 py-1.5 text-gray-900 shadow-sm ring-2 ring-inset ring-[#2b8b8d] placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-[#1a6e6e] sm:text-sm/6">
+          </div>
+
+          <div class="mt-2">
+            <input placeholder="  Password" id="password" name="password" type="password" autocomplete="current-password" required class=" font-['Montserrat']block w-full rounded-lg border-0 py-1.5 text-gray-900 shadow-sm ring-2 ring-inset ring-[#2b8b8d] placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-[#1a6e6e] sm:text-sm/6">
+          </div>
+          <div class="flex justify-center">
+            <button type="submit" class="font-['Montserrat'] rounded-full bg-gradient-to-r from-[#5db2bf] to-[#1e6f6f] hover:from-[#1a6e6e] hover:to-[#5db2bf] px-6 py-2 text-sm/6 font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Dive In</button>
+          </div>
+        </form>
+        <div class="mt-2 mb-4 text-center text-sm">
+          <a class="mx-2 font-['Montserrat'] text-[#2b8b8d] hover:text-[#1a6e6e]" href="">Forgot Password?</a>
+          <a class="mx-2 font-['Montserrat'] text-[#2b8b8d] hover:text-[#1a6e6e]" href="">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
